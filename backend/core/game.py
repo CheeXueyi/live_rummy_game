@@ -79,6 +79,19 @@ class SequenceCollection(Collection):
     def add_tile(self, tile: Tile) -> bool:
         # TODO
         return False
+    
+class SameRankCollection(Collection):
+    def __init__(self, starting_collection: list[Tile], rank: Rank):
+        self.collection = set(starting_collection)
+        self.rank = rank
+    
+    def can_add(self, tile: Tile) -> bool:
+        # TODO
+        return False
+
+    def add_tile(self, tile: Tile) -> bool:
+        # TODO
+        return False
 
 
 # class Rummy_Game:
