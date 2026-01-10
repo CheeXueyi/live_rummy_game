@@ -196,7 +196,9 @@ class SameRankCollection(Collection):
 
 
     def _can_add(self, tile: Normal_Tile) -> bool:
-        " "
+        '''
+        Returns true if given tile can be added to this collection.
+        '''
         return tile.rank == self.rank
         
     
