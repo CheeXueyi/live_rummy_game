@@ -74,3 +74,11 @@
    - `is_finished()`
    - `get_scores()`
 4. Implement collection validation logic (sequences, same rank checks)
+
+# Dealing with played rummy tiles
+After rummy is played, the rummy takes on an identity of a normal tile.
+We need to deal with this somehow in our data models.
+Implement this by giving normal tile a flag "was rummy tile"
+Then when a rummy tile gets played, player has to specify the identity of the rummy tile
+This is when we instantiate a new normal tile of the player's choosing with the rummy tile set
+
